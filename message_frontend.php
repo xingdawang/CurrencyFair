@@ -30,8 +30,8 @@
     $darkred  = imagecolorallocate($image, 0x90, 0x00, 0x00);
     
     // Test data
-    $currency_from = 1000;
-    $currency_to = 747;
+    #$currency_from = 1000;
+    #$currency_to = 747;
     
     $ratio = $currency_from / ($currency_from + $currency_to) * 360;
     //echo $ratio;

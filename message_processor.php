@@ -47,14 +47,6 @@
     
     /**
      * If the transaction is beyond limit, the new comer trasactions need to be waited
-     * @param string $user_id user id
-     * @param string $currency_from country where the currency is from
-     * @param string $currency_to country where the currency is to
-     * @param float $amountSell amount of the money that is sold
-     * @param float $amountBuy amount of the monney that wants to be bought
-     * @param timestamp $time_placed the placed time
-     * @param string $originating_country originating country
-     * @return string array $json_data generated json array
      */
     function doTransaction($second, $new_second_throttle){
         if($new_second_throttle > $second) {
@@ -95,7 +87,7 @@
     //die(json_encode($array));
 
     // Posted to an url
-    $url="http://10.211.55.5/old/message_frontend.php";
+    $url="http://212.111.43.104/old/message_frontend.php";
   
     $content = json_encode($array);
     
